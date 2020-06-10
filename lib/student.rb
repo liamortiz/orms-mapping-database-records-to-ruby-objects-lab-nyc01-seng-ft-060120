@@ -7,7 +7,7 @@ class Student
     new_student.id = row[0]
     new_student.name = row[1]
     new_student.grade = row[2]
-    puts new_student.name
+    new_student
     
   end
 
