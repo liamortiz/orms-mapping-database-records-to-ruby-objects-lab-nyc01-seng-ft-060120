@@ -24,7 +24,6 @@ class Student
       SELECT * FROM students WHERE name = ?
     SQL
     row = DB[:conn].execute(sql, name)[0]
-    p row
     new_from_db(row)
   end
   
