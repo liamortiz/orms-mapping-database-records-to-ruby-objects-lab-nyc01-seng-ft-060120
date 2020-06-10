@@ -47,7 +47,7 @@ class Student
       VALUES (?, ?)
     SQL
 
-    DB[:conn].execute(sql, self.name, self.grade)[0]
+    DB[:conn].execute(sql, self.name, self.grade)
   end
   
   def self.create_table
