@@ -38,7 +38,7 @@ class Student
     sql = <<-SQL
       SELECT * FROM students WHERE grade < 12
     SQL
-    puts DB[:conn].execute(sql)
+    puts DB[:conn].execute(sql)[0]
   end
   
   def save
