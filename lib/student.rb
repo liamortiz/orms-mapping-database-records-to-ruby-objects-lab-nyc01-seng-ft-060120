@@ -45,7 +45,7 @@ class Student
     sql = <<-SQL
       SELECT * FROM students WHERE grade = 10 LIMIT ?
     SQL
-    DB[:conn].execute(sql, limit)
+    p DB[:conn].execute(sql, limit)
   end
   
   def save
